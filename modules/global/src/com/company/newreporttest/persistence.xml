@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             version="2.0">
+    <persistence-unit name="newReporttest"
+                      transaction-type="RESOURCE_LOCAL">
+        <class>com.company.newreporttest.entity.Book</class>
+        <class>com.company.newreporttest.entity.LiteratureType</class>
+        <class>com.company.newreporttest.entity.Author</class>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.newreporttest.web.literaturetype.LiteratureTypeBrowse"
+        focusComponent="literatureTypesTable"
+        lookupComponent="literatureTypesTable"
+        messagesPack="com.company.newreporttest.web.literaturetype">
+    <dsContext>
+        <groupDatasource id="literatureTypesDs"
+                         class="com.company.newreporttest.entity.LiteratureType"
+                         view="_local">
+            <query>
+                <![CDATA[select e from newreporttest$LiteratureType e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="literatureTypesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="literatureTypesTable"
+                datasource="literatureTypesDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="literatureTypesTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+            </columns>
+            <rows datasource="literatureTypesDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="literatureTypesTable.create"/>
+                <button id="editBtn"
+                        action="literatureTypesTable.edit"/>
+                <button id="removeBtn"
+                        action="literatureTypesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>

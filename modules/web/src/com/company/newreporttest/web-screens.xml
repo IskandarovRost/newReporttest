@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="com/company/newreporttest/screens.xml"/>
+    <screen id="newreporttest$Book.browse"
+            template="com/company/newreporttest/web/book/book-browse.xml"/>
+    <screen id="newreporttest$Author.browse"
+            template="com/company/newreporttest/web/author/author-browse.xml"/>
+    <screen id="newreporttest$Author.edit"
+            template="com/company/newreporttest/web/author/author-edit.xml"/>
+    <screen id="newreporttest$LiteratureType.browse"
+            template="com/company/newreporttest/web/literaturetype/literature-type-browse.xml"/>
+    <screen id="newreporttest$LiteratureType.edit"
+            template="com/company/newreporttest/web/literaturetype/literature-type-edit.xml"/>
+</screen-config>

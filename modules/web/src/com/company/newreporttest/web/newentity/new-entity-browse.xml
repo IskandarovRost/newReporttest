@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
-        class="com.company.newreporttest.web.literaturetype.LiteratureTypeBrowse"
-        focusComponent="literatureTypesTable"
-        lookupComponent="literatureTypesTable"
-        messagesPack="com.company.newreporttest.web.literaturetype">
+        class="com.company.newreporttest.web.newentity.NewEntityBrowse"
+        focusComponent="newEntitiesTable"
+        lookupComponent="newEntitiesTable"
+        messagesPack="com.company.newreporttest.web.newentity">
     <dsContext>
-        <groupDatasource id="literatureTypesDs"
-                         class="com.company.newreporttest.entity.LiteratureType"
-                         view="_local">
+        <groupDatasource id="newEntitiesDs"
+                         class="com.company.newreporttest.entity.NewEntity"
+                         view="newEntity-view">
             <query>
-                <![CDATA[select e from newreporttest$LiteratureType e]]>
+                <![CDATA[select e from newreporttest$NewEntity e]]>
             </query>
         </groupDatasource>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="literatureTypesTable"
+    <layout expand="newEntitiesTable"
             spacing="true">
         <filter id="filter"
-                applyTo="literatureTypesTable"
-                datasource="literatureTypesDs">
+                applyTo="newEntitiesTable"
+                datasource="newEntitiesDs">
             <properties include=".*"/>
         </filter>
-        <groupTable id="literatureTypesTable"
+        <groupTable id="newEntitiesTable"
                     width="100%">
             <actions>
                 <action id="create"/>
@@ -31,18 +31,19 @@
                 <action id="remove"/>
             </actions>
             <columns>
-                <column id="name"/>
+                <column id="someField"/>
+                <column id="file"/>
             </columns>
-            <rows datasource="literatureTypesDs"/>
+            <rows datasource="newEntitiesDs"/>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
                 <button id="createBtn"
-                        action="literatureTypesTable.create"/>
+                        action="newEntitiesTable.create"/>
                 <button id="editBtn"
-                        action="literatureTypesTable.edit"/>
+                        action="newEntitiesTable.edit"/>
                 <button id="removeBtn"
-                        action="literatureTypesTable.remove"/>
+                        action="newEntitiesTable.remove"/>
             </buttonsPanel>
         </groupTable>
     </layout>

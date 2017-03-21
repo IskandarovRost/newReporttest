@@ -6,5 +6,14 @@
         <class>com.company.newreporttest.entity.Book</class>
         <class>com.company.newreporttest.entity.LiteratureType</class>
         <class>com.company.newreporttest.entity.Author</class>
+        <class>com.company.newreporttest.entity.RefEntity</class>
+        <class>com.company.newreporttest.entity.Dummy</class>
+        <class>com.company.newreporttest.entity.KeyTwo</class>
+        <class>com.company.newreporttest.entity.TestTwo</class>
+        <class>com.company.newreporttest.entity.NewEntity</class>
+        <class>com.company.newreporttest.entity.KeyOne</class>
+        <class>com.company.newreporttest.entity.TestOne</class>
+        <class>com.company.newreporttest.entity.Ponder</class>
+        <class>com.company.newreporttest.entity.Stamen</class>
     </persistence-unit>
 </persistence>

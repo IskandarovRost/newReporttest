@@ -3,7 +3,7 @@ buildscript {
     ext.cubaVersion = '6.4.2'
     repositories {
         maven {
-            url 'https://repo.cuba-platform.com/content/groups/work'
+            url 'http://repository.haulmont.com:8587/nexus/content/groups/work'
             credentials {
                 username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : 'cuba')
                 password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'cuba123')
@@ -16,7 +16,6 @@ buildscript {
                 password(rootProject.hasProperty('premiumRepoPass') ? rootProject['premiumRepoPass'] : System.getenv('CUBA_PREMIUM_PASSWORD'))
             }
         }
-        
     }
     dependencies {
         classpath "com.haulmont.gradle:cuba-plugin:$cubaVersion"
@@ -32,6 +31,7 @@ def globalModule = project(':app-global')
 def coreModule = project(':app-core')
 def guiModule = project(':app-gui')
 def webModule = project(':app-web')
+def desktopModule = project(':app-desktop')
 
 def servletApi = 'org.apache.tomcat:tomcat-servlet-api:8.0.26'
 
@@ -50,9 +50,9 @@ cuba {
     }
 }
 
-def hsql = 'org.hsqldb:hsqldb:2.2.9'
+def postgres = 'org.postgresql:postgresql:9.4.1212'
 
-configure([globalModule, coreModule, guiModule, webModule]) {
+configure([globalModule, coreModule, guiModule, webModule, desktopModule]) {
     apply(plugin: 'java')
     apply(plugin: 'maven')
     apply(plugin: 'idea')
@@ -88,8 +88,8 @@ configure(coreModule) {
     dependencies {
         compile(globalModule)
         provided(servletApi)
-        jdbc(hsql)
-        testRuntime(hsql)
+        jdbc(postgres)
+        testRuntime(postgres)
 
     }
 
@@ -108,19 +108,19 @@ configure(coreModule) {
     }
 
     task createDb(dependsOn: assembleDbScripts, description: 'Creates local database', type: CubaDbCreation) {
-        dbms = 'hsql'
+        dbms = 'postgres'
         host = 'localhost'
         dbName = 'newreporttest'
-        dbUser = 'sa'
-        dbPassword = ''
+        dbUser = 'postgres'
+        dbPassword = '5532Modest78'
     }
 
     task updateDb(dependsOn: assembleDbScripts, description: 'Updates local database', type: CubaDbUpdate) {
-        dbms = 'hsql'
+        dbms = 'postgres'
         host = 'localhost'
         dbName = 'newreporttest'
-        dbUser = 'sa'
-        dbPassword = ''
+        dbUser = 'postgres'
+        dbPassword = '5532Modest78'
     }
 }
 
@@ -185,6 +185,41 @@ configure(webModule) {
 }
 
 
+configure(desktopModule) {
+    apply(plugin: 'application')
+    mainClassName = 'com.company.newreporttest.desktop.App'
+
+    dependencies {
+        compile(guiModule)
+        
+    }
+    assemble.dependsOn = [ classes ]
+
+    jar {
+        manifest {
+            attributes("Permissions": "all-permissions")
+        }
+    }
+
+    installDist {
+        into("${projectDir}/../../deploy/" + applicationName)
+    }
+
+    task deploy(dependsOn: installDist)
+
+    task createWebStart(dependsOn: [assemble, jar], type: CubaWebStartCreation) {
+        signJarsKeystore = "${projectDir}/webstart/sign-jars-keystore.jks"
+        signJarsAlias = 'signJars'
+        signJarsPassword = 'HaulmontSignJars'
+        indexFileName = "${projectDir}/webstart/index.html"
+        basePath = 'app-webstart'
+    }
+
+    task deployWebStart(dependsOn: createWebStart, type: CubaWebStartDeployment) {
+        basePath = 'app-webstart'
+    }
+}
+
 
 
 
@@ -192,6 +227,7 @@ task undeploy(type: Delete, dependsOn: ':app-web:cleanConf') {
     delete("$cuba.tomcat.dir/shared")
     delete("$cuba.tomcat.dir/webapps/app-core")
     delete("$cuba.tomcat.dir/webapps/app")
+    delete("$cuba.tomcat.dir/webapps/app-webstart")
 }
 
 task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], description: 'Redeploys applications and restarts local Tomcat') << {
@@ -208,3 +244,45 @@ task wrapper(type: Wrapper) {
 }
 
 apply from: 'extra.gradle'
+
+task buildWar(type: CubaWarBuilding) {
+    coreContextXmlPath = 'modules/core/web/META-INF/war-context.xml'
+    appProperties = ['cuba.automaticDatabaseUpdate' : true]
+    singleWar = false
+    includeContextXml = true
+    appHome = 'app_home'
+}
+task stage(dependsOn: ['setupTomcat', ':app-core:deploy', ':app-web:deploy']) {
+    doLast {
+        // replace context.xml with heroku-context.xml
+        def src = new File('modules/core/web/META-INF/heroku-context.xml')
+        def dst = new File('deploy/tomcat/webapps/app-core/META-INF/context.xml')
+        dst.delete()
+        dst << src.text
+
+        // change port from 8080 to heroku $PORT
+        def file = new File('deploy/tomcat/conf/server.xml')
+        file.text = file.text.replace('8080', '${port.http}')
+
+        // add local.app.properties for core application
+        def coreConfDir = new File('deploy/tomcat/conf/app-core/')
+        coreConfDir.mkdirs()
+        def coreProperties = new File(coreConfDir, 'local.app.properties')
+        coreProperties.text = ''' cuba.automaticDatabaseUpdate = true '''
+
+        // rename deploy/tomcat/webapps/app to deploy/tomcat/webapps/ROOT
+        def rootFolder = new File('deploy/tomcat/webapps/ROOT')
+        if (rootFolder.exists()) {
+            rootFolder.deleteDir()
+        }
+
+        def webAppDir = new File('deploy/tomcat/webapps/app')
+        webAppDir.renameTo( new File(rootFolder) )
+
+        // add local.app.properties for web application
+        def webConfDir = new File('deploy/tomcat/conf/ROOT/')
+        webConfDir.mkdirs()
+        def webProperties = new File(webConfDir, 'local.app.properties')
+        webProperties.text = ''' cuba.webContextName = / '''
+    }
+}

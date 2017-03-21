@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        caption="msg://caption"
+        caption="msg://browseCaption"
         class="com.company.newreporttest.web.book.BookBrowse"
         focusComponent="booksTable"
         lookupComponent="booksTable"
         messagesPack="com.company.newreporttest.web.book">
     <dsContext>
-        <datasource id="bookDs"
-                    class="com.company.newreporttest.entity.Book"
-                    view="book-view"/>
         <groupDatasource id="booksDs"
                          class="com.company.newreporttest.entity.Book"
                          view="book-view">
@@ -17,84 +14,38 @@
             </query>
         </groupDatasource>
     </dsContext>
-    <actions>
-        <action id="save"
-                caption="mainMsg://actions.Ok"
-                icon="icons/ok.png"
-                invoke="save"
-                shortcut="CTRL-ENTER"/>
-        <action id="cancel"
-                caption="mainMsg://actions.Cancel"
-                icon="icons/cancel.png"
-                invoke="cancel"/>
-    </actions>
     <dialogMode height="600"
                 width="800"/>
-    <layout>
-        <split id="split"
-               height="100%"
-               orientation="horizontal"
-               reversePosition="true"
-               width="100%">
-            <vbox id="lookupBox"
-                  expand="booksTable"
-                  height="100%"
-                  margin="false,true,false,false"
-                  spacing="true">
-                <filter id="filter"
-                        applyTo="booksTable"
-                        datasource="booksDs">
-                    <properties include=".*"/>
-                </filter>
-                <groupTable id="booksTable"
-                            width="100%">
-                    <actions>
-                        <action id="create"/>
-                        <action id="edit"/>
-                        <action id="remove"/>
-                    </actions>
-                    <columns>
-                        <column id="name"/>
-                        <column id="literatureType"/>
-                        <column id="author"/>
-                    </columns>
-                    <rows datasource="booksDs"/>
-                    <rowsCount/>
-                    <buttonsPanel id="buttonsPanel"
-                                  alwaysVisible="true">
-                        <button id="createBtn"
-                                action="booksTable.create"/>
-                        <button id="editBtn"
-                                action="booksTable.edit"/>
-                        <button id="removeBtn"
-                                action="booksTable.remove"/>
-                    </buttonsPanel>
-                </groupTable>
-            </vbox>
-            <vbox id="editBox"
-                  expand="fieldGroupBox"
-                  height="100%"
-                  margin="false,false,false,true"
-                  spacing="true">
-                <vbox id="fieldGroupBox">
-                    <fieldGroup id="fieldGroup"
-                                datasource="bookDs">
-                        <column width="250px">
-                            <field id="name"/>
-                            <field id="literatureType"/>
-                            <field id="author"/>
-                        </column>
-                    </fieldGroup>
-                </vbox>
-                <hbox id="actionsPane"
-                      spacing="true"
-                      visible="false">
-                    <button id="saveBtn"
-                            action="save"/>
-                    <button id="cancelBtn"
-                            action="cancel"/>
-                </hbox>
-            </vbox>
-        </split>
+    <layout expand="booksTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="booksTable"
+                datasource="booksDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="booksTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="literatureType"/>
+                <column id="author"/>
+            </columns>
+            <rows datasource="booksDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="booksTable.create"/>
+                <button id="editBtn"
+                        action="booksTable.edit"/>
+                <button id="removeBtn"
+                        action="booksTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
     </layout>
 </window>

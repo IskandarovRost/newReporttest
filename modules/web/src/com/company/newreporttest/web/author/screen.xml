@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.newreporttest.web.author.Screen"
+        messagesPack="com.company.newreporttest.web.author">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <label id="label"
+               value="msg://SomeValueWebLabel"/>
+        <hbox spacing="true">
+            <textField id="textField"
+                       caption="textField  4"
+                       textChangeTimeout="4"/>
+            <textField id="textField_1"
+                       caption="10000"
+                       textChangeTimeout="10000"/>
+            <textField id="textField_2"
+                       caption="def"/>
+        </hbox>
+        <hbox spacing="true">
+            <sourceCodeEditor id="sourceCodeEditor"/>
+            <sourceCodeEditor id="sourceCodeEditor_1"/>
+        </hbox>
+        <hbox spacing="true">
+            <textArea id="textArea"
+                      textChangeTimeout="4"/>
+            <textArea id="textArea_1"
+                      caption="10000"
+                      textChangeTimeout="10000"/>
+            <textArea id="textArea_2"/>
+            <richTextArea id="richTextArea"/>
+        </hbox>
+    </layout>
+</window>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="com/company/newreporttest/screens.xml"/>
+    <screen id="screen"
+            agent="PHONE"
+            template="com/company/newreporttest/desktop/screens/screen.xml"/>
+</screen-config>

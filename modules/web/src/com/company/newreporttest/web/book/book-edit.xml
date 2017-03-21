@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://editorCaption"
-        class="com.company.newreporttest.web.author.AuthorEdit"
-        datasource="authorDs"
+        class="com.company.newreporttest.web.book.BookEdit"
+        datasource="bookDs"
         focusComponent="fieldGroup"
-        messagesPack="com.company.newreporttest.web.author">
+        messagesPack="com.company.newreporttest.web.book">
     <dsContext>
-        <datasource id="authorDs"
-                    class="com.company.newreporttest.entity.Author"
-                    view="_local"/>
+        <datasource id="bookDs"
+                    class="com.company.newreporttest.entity.Book"
+                    view="book-view"/>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
     <layout expand="windowActions"
             spacing="true">
         <fieldGroup id="fieldGroup"
-                    datasource="authorDs">
+                    datasource="bookDs">
             <column width="250px">
-                <field id="firstName"/>
-                <field id="lastName"/>
+                <field id="name"/>
+                <field id="literatureType"/>
+                <field id="author"/>
             </column>
         </fieldGroup>
         <frame id="windowActions"

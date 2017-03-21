@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.company.newreporttest.web.newentity.NewEntityEdit"
+        datasource="newEntityDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.newreporttest.web.newentity">
+    <dsContext>
+        <datasource id="newEntityDs"
+                    class="com.company.newreporttest.entity.NewEntity"
+                    view="newEntity-view"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="newEntityDs">
+            <column width="250px">
+                <field id="someField"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+        <vbox id="uploadBox"
+              height="200px"
+              margin="true"
+              spacing="true"
+              width="200px">
+            <label id="dzboox"
+                   align="MIDDLE_CENTER"
+                   value="dropzone"/>
+        </vbox>
+        <upload id="newEntityUpload"
+                accept=" .wav,.mp3,.jpg,.png"
+                datasource="newEntityDs"
+                dropZone="dzboox"
+                property="file"/>
+    </layout>
+</window>

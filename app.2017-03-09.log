@@ -1,0 +1,1314 @@
+13:22:31.841 DEBUG [AWT-EventQueue-0] com.haulmont.cuba.desktop.App - Program arguments: []
+13:22:31.967 INFO  [AWT-EventQueue-0] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+13:22:31.984 INFO  [AWT-EventQueue-0] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=false
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+13:22:32.171 INFO  [AWT-EventQueue-0] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4e4dc95e: startup date [Thu Mar 09 13:22:32 GMT+04:00 2017]; root of context hierarchy
+13:22:32.202 INFO  [AWT-EventQueue-0] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+13:22:33.135 INFO  [AWT-EventQueue-0] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/iskandarov/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-client/6.4.2/26fbfc59abe7a08d612e0fcfa3247ef93cf8c020/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+13:22:33.136 INFO  [AWT-EventQueue-0] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/iskandarov/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-global/6.4.2/6b480e1eb0dccfcdeca1b04a1adc8072eab45e72/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+13:22:33.137 INFO  [AWT-EventQueue-0] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/iskandarov/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-global/6.4.2/6b480e1eb0dccfcdeca1b04a1adc8072eab45e72/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+13:22:33.143 INFO  [AWT-EventQueue-0] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+13:22:33.203 INFO  [AWT-EventQueue-0] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+13:22:33.635 INFO  [AWT-EventQueue-0] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+13:22:33.642 INFO  [AWT-EventQueue-0] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+13:22:33.662 INFO  [AWT-EventQueue-0] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:22:34.077 INFO  [AWT-EventQueue-0] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+13:22:34.556 INFO  [AWT-EventQueue-0] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+13:22:34.724 INFO  [AWT-EventQueue-0] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+13:22:34.729 INFO  [AWT-EventQueue-0] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:file:/C:/Users/iskandarov/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-desktop/6.4.2/de4ef7cb9486a4260b9d4bf15ccfb27e4eb63ef/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+13:22:35.080 DEBUG [AWT-EventQueue-0] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+13:22:37.560 INFO  [AWT-EventQueue-0] com.haulmont.cuba.desktop.Connection - Logged in: 311ec43e-7af6-a75f-320e-a338f5e178e1 [admin]
+13:22:37.645 INFO  [AWT-EventQueue-0] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+13:22:37.829 INFO  [AWT-EventQueue-0] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 184ms
+13:22:37.935 INFO  [BackgroundTaskThread-1745934831] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+13:22:37.944 INFO  [BackgroundTaskThread-959195905] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-15ms
+13:22:37.957 DEBUG [AWT-EventQueue-0] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@57debe7. User: 311ec43e-7af6-a75f-320e-a338f5e178e1
+13:22:37.957 DEBUG [AWT-EventQueue-0] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@54cf7a7e. User: 311ec43e-7af6-a75f-320e-a338f5e178e1
+13:22:40.955 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@7b35674a
+13:22:40.960 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@3660fcb6
+13:22:40.961 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@5357324c
+13:22:40.962 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@5dfcb967
+13:22:41.183 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@71a81f25
+13:22:41.398 INFO  [AWT-EventQueue-0] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+13:22:41.399 DEBUG [AWT-EventQueue-0] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+13:22:41.403 DEBUG [AWT-EventQueue-0] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+13:22:41.405 DEBUG [AWT-EventQueue-0] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+13:22:41.597 DEBUG [AWT-EventQueue-0] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+13:22:41.597 INFO  [AWT-EventQueue-0] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+13:22:41.621 DEBUG [AWT-EventQueue-0] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+13:22:41.622 DEBUG [AWT-EventQueue-0] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+13:22:41.631 DEBUG [AWT-EventQueue-0] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+13:22:41.631 DEBUG [AWT-EventQueue-0] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+13:22:41.631 DEBUG [AWT-EventQueue-0] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+13:22:41.634 DEBUG [AWT-EventQueue-0] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+13:22:41.635 DEBUG [AWT-EventQueue-0] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+13:22:41.637 DEBUG [AWT-EventQueue-0] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+13:22:41.637 DEBUG [AWT-EventQueue-0] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+13:22:41.637 DEBUG [AWT-EventQueue-0] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+13:22:41.699 DEBUG [AWT-EventQueue-0] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+13:22:41.982 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@3905a8b2
+13:22:41.982 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@3905a8b2
+13:22:59.714 ERROR [AWT-EventQueue-0] com.haulmont.cuba.desktop.App - Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+com.haulmont.cuba.gui.NoSuchScreenException: Screen 'newreporttest$Author.browse' is not defined
+	at com.haulmont.cuba.gui.config.WindowConfig.getWindowInfo(WindowConfig.java:297) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.config.WindowConfig.getWindowInfo(WindowConfig.java:283) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.components.PickerField$LookupAction.actionPerform(PickerField.java:313) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.gui.components.DesktopButton$1.actionPerformedAfterValidation(DesktopButton.java:71) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener$1.run(ValidationAwareActionListener.java:30) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAlertHolder.runIfValid(ValidationAlertHolder.java:59) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener.actionPerformed(ValidationAwareActionListener.java:27) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022) ~[na:1.8.0_121]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259) ~[na:1.8.0_121]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252) ~[na:1.8.0_121]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289) ~[na:1.8.0_121]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289) ~[na:1.8.0_121]
+	at java.awt.Component.processMouseEvent(Component.java:6533) ~[na:1.8.0_121]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324) ~[na:1.8.0_121]
+	at java.awt.Component.processEvent(Component.java:6298) ~[na:1.8.0_121]
+	at java.awt.Container.processEvent(Container.java:2236) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEventImpl(Component.java:4889) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2294) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2280) ~[na:1.8.0_121]
+	at java.awt.Window.dispatchEventImpl(Window.java:2746) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758) ~[na:1.8.0_121]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:731) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:729) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728) ~[na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [na:1.8.0_121]
+13:23:01.784 ERROR [AWT-EventQueue-0] com.haulmont.cuba.desktop.App - Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+com.haulmont.cuba.gui.NoSuchScreenException: Screen 'newreporttest$Book.browse' is not defined
+	at com.haulmont.cuba.gui.config.WindowConfig.getWindowInfo(WindowConfig.java:297) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.config.WindowConfig.getWindowInfo(WindowConfig.java:283) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.components.PickerField$LookupAction.actionPerform(PickerField.java:313) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.gui.components.DesktopButton$1.actionPerformedAfterValidation(DesktopButton.java:71) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener$1.run(ValidationAwareActionListener.java:30) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAlertHolder.runIfValid(ValidationAlertHolder.java:59) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener.actionPerformed(ValidationAwareActionListener.java:27) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022) ~[na:1.8.0_121]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259) ~[na:1.8.0_121]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252) ~[na:1.8.0_121]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289) ~[na:1.8.0_121]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289) ~[na:1.8.0_121]
+	at java.awt.Component.processMouseEvent(Component.java:6533) ~[na:1.8.0_121]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324) ~[na:1.8.0_121]
+	at java.awt.Component.processEvent(Component.java:6298) ~[na:1.8.0_121]
+	at java.awt.Container.processEvent(Container.java:2236) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEventImpl(Component.java:4889) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2294) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2280) ~[na:1.8.0_121]
+	at java.awt.Window.dispatchEventImpl(Window.java:2746) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758) ~[na:1.8.0_121]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:731) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:729) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728) ~[na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [na:1.8.0_121]
+13:23:03.610 ERROR [AWT-EventQueue-0] com.haulmont.cuba.desktop.App - Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+com.haulmont.cuba.gui.NoSuchScreenException: Screen 'newreporttest$LiteratureType.browse' is not defined
+	at com.haulmont.cuba.gui.config.WindowConfig.getWindowInfo(WindowConfig.java:297) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.config.WindowConfig.getWindowInfo(WindowConfig.java:283) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.components.WindowDelegate.openLookup(WindowDelegate.java:279) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.gui.components.DesktopWindow.openLookup(DesktopWindow.java:741) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.components.actions.AddAction.actionPerform(AddAction.java:211) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.gui.components.DesktopButton$1.actionPerformedAfterValidation(DesktopButton.java:71) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener$1.run(ValidationAwareActionListener.java:30) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAlertHolder.runIfValid(ValidationAlertHolder.java:59) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener.actionPerformed(ValidationAwareActionListener.java:27) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022) ~[na:1.8.0_121]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259) ~[na:1.8.0_121]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252) ~[na:1.8.0_121]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289) ~[na:1.8.0_121]
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289) ~[na:1.8.0_121]
+	at java.awt.Component.processMouseEvent(Component.java:6533) ~[na:1.8.0_121]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324) ~[na:1.8.0_121]
+	at java.awt.Component.processEvent(Component.java:6298) ~[na:1.8.0_121]
+	at java.awt.Container.processEvent(Container.java:2236) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEventImpl(Component.java:4889) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2294) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2280) ~[na:1.8.0_121]
+	at java.awt.Window.dispatchEventImpl(Window.java:2746) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758) ~[na:1.8.0_121]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:731) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:729) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728) ~[na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [na:1.8.0_121]
+13:25:11.745 DEBUG [AWT-EventQueue-0] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.DesktopWindowManager$AsyncSettingsImpl$1@498b0a64. User: 311ec43e-7af6-a75f-320e-a338f5e178e1
+13:25:14.738 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@5a733198
+13:25:14.741 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@36bf50ad
+13:25:14.741 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@12e7332d
+13:25:14.742 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@1ff3462
+13:25:14.759 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@248dd607
+13:25:14.837 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@24414844
+13:25:14.837 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@24414844
+13:25:19.480 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-report-parameter-caption for component com.haulmont.cuba.desktop.gui.components.DesktopLabel@270f39c4
+13:25:19.497 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style add-btn for component com.haulmont.cuba.desktop.gui.components.DesktopButton@52135a7a
+13:25:19.498 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style clear-btn for component com.haulmont.cuba.desktop.gui.components.DesktopButton@1b3bfccb
+13:25:19.501 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style add-btn for component com.haulmont.cuba.desktop.gui.components.DesktopButton@52135a7a
+13:25:19.501 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style clear-btn for component com.haulmont.cuba.desktop.gui.components.DesktopButton@1b3bfccb
+13:25:19.502 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style add-btn for component com.haulmont.cuba.desktop.gui.components.DesktopButton@52135a7a
+13:25:19.502 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style clear-btn for component com.haulmont.cuba.desktop.gui.components.DesktopButton@1b3bfccb
+13:25:19.506 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-report-parameter-caption for component com.haulmont.cuba.desktop.gui.components.DesktopLabel@6a21a6ab
+13:25:21.130 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@66bd977
+13:25:21.131 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@7377a35a
+13:25:21.131 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@17cf53d6
+13:25:21.131 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@587785e2
+13:25:21.138 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@3c0aa5ed
+13:25:21.166 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@3676b0d
+13:25:21.166 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@3676b0d
+13:25:23.192 DEBUG [AWT-EventQueue-0] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.DesktopWindowManager$AsyncSettingsImpl$1@5a924012. User: 311ec43e-7af6-a75f-320e-a338f5e178e1
+13:25:24.111 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@8a485e
+13:25:24.112 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@1117fd06
+13:25:24.113 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@c82cc7a
+13:25:24.114 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@238c61e6
+13:25:24.127 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@5470a457
+13:25:24.150 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@6b6ed220
+13:25:24.150 DEBUG [AWT-EventQueue-0] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@6b6ed220
+13:25:25.962 DEBUG [AWT-EventQueue-0] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.DesktopWindowManager$AsyncSettingsImpl$1@2fc88906. User: 311ec43e-7af6-a75f-320e-a338f5e178e1
+13:25:27.465 ERROR [AWT-EventQueue-0] com.haulmont.cuba.desktop.App - Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.haulmont.cuba.gui.xml.DeclarativeAction.actionPerform(DeclarativeAction.java:94) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.gui.components.DesktopButton$1.actionPerformedAfterValidation(DesktopButton.java:71) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener$1.run(ValidationAwareActionListener.java:30) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAlertHolder.runIfValid(ValidationAlertHolder.java:59) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareActionListener.actionPerformed(ValidationAwareActionListener.java:27) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022) ~[na:1.8.0_121]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402) ~[na:1.8.0_121]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259) ~[na:1.8.0_121]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252) ~[na:1.8.0_121]
+	at java.awt.Component.processMouseEvent(Component.java:6533) ~[na:1.8.0_121]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324) ~[na:1.8.0_121]
+	at java.awt.Component.processEvent(Component.java:6298) ~[na:1.8.0_121]
+	at java.awt.Container.processEvent(Container.java:2236) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEventImpl(Component.java:4889) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2294) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525) ~[na:1.8.0_121]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466) ~[na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Container.java:2280) ~[na:1.8.0_121]
+	at java.awt.Window.dispatchEventImpl(Window.java:2746) ~[na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Component.java:4711) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758) ~[na:1.8.0_121]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) ~[na:1.8.0_121]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:731) ~[na:1.8.0_121]
+	at java.awt.EventQueue$4.run(EventQueue.java:729) ~[na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) ~[na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728) ~[na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [na:1.8.0_121]
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at com.haulmont.cuba.gui.xml.DeclarativeAction.actionPerform(DeclarativeAction.java:92) ~[cuba-gui-6.4.2.jar:6.4.2]
+	... 40 common frames omitted
+Caused by: com.haulmont.reports.exception.ReportingException: . Template name [testReport.html] Report name [BookNAuthorsPDF]
+Can't load the XML resource (using TRaX transformer). org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+The markup in the document preceding the root element must be well-formed.
+	at com.haulmont.reports.ReportingBean.createReportDocument(ReportingBean.java:283) ~[na:na]
+	at com.haulmont.reports.ReportingBean.createReport(ReportingBean.java:166) ~[na:na]
+	at com.haulmont.reports.ReportServiceBean.createReport(ReportServiceBean.java:37) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85) ~[na:na]
+	at com.haulmont.cuba.core.sys.ServiceInterceptor.aroundInvoke(ServiceInterceptor.java:115) ~[na:na]
+	at sun.reflect.GeneratedMethodAccessor129.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.sun.proxy.$Proxy211.createReport(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.sun.proxy.$Proxy268.createReport(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.remoting.support.RemoteInvocation.invoke(RemoteInvocation.java:212) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.haulmont.cuba.core.sys.remoting.CubaRemoteInvocationExecutor.invoke(CubaRemoteInvocationExecutor.java:109) ~[na:na]
+	at org.springframework.remoting.support.RemoteInvocationBasedExporter.invoke(RemoteInvocationBasedExporter.java:78) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.remoting.support.RemoteInvocationBasedExporter.invokeAndCreateResult(RemoteInvocationBasedExporter.java:114) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.haulmont.cuba.core.sys.remoting.HttpServiceExporter.handleRequest(HttpServiceExporter.java:77) ~[na:na]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:51) ~[na:na]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[na:na]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[na:na]
+	at com.haulmont.cuba.core.sys.remoting.RemotingServlet.doService(RemotingServlet.java:149) ~[na:na]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[na:na]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[na:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[javaee-api-7.0.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[na:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[javaee-api-7.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[na:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[na:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[na:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[na:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[na:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[na:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[na:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) ~[na:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[na:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) ~[na:na]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624) ~[na:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[na:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) ~[na:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) ~[na:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[na:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437) ~[na:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[na:na]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+	at org.springframework.remoting.support.RemoteInvocationUtils.fillInClientStackTraceIfPossible(RemoteInvocationUtils.java:45) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.haulmont.cuba.core.sys.remoting.HttpServiceProxy.recreateRemoteInvocationResult(HttpServiceProxy.java:48) ~[cuba-global-6.4.2.jar:6.4.2]
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:150) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.sun.proxy.$Proxy37.createReport(Unknown Source) ~[na:na]
+	at com.haulmont.reports.gui.ReportGuiManager.getReportResult(ReportGuiManager.java:207) ~[reports-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.reports.gui.ReportGuiManager.printReportSync(ReportGuiManager.java:191) ~[reports-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.reports.gui.ReportGuiManager.printReport(ReportGuiManager.java:177) ~[reports-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.reports.gui.report.run.InputParametersWindow.printReport(InputParametersWindow.java:62) ~[reports-gui-6.4.2.jar:6.4.2]
+	... 45 common frames omitted
+14:33:23.171 INFO  [AWT-EventQueue-0] com.haulmont.cuba.desktop.Connection - Logged out: 311ec43e-7af6-a75f-320e-a338f5e178e1 [admin]
+14:33:23.177 INFO  [AWT-EventQueue-0] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4e4dc95e: startup date [Thu Mar 09 13:22:32 GMT+04:00 2017]; root of context hierarchy
+14:33:23.178 INFO  [AWT-EventQueue-0] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+14:55:29.580 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+14:55:29.660 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+14:55:29.673 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+14:55:29.852 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@2ad0daa4: startup date [Thu Mar 09 14:55:29 GMT+04:00 2017]; root of context hierarchy
+14:55:29.884 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+14:55:30.471 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+14:55:30.472 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+14:55:30.472 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+14:55:30.479 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+14:55:30.498 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+14:55:30.784 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+14:55:30.788 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+14:55:30.792 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:55:31.167 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+14:55:31.553 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+14:55:31.651 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+14:55:31.655 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+14:55:31.777 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+14:55:34.079 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: 0f5d5ce1-80ad-74cb-ac27-534df9fd5cd3 [admin]
+14:55:34.106 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+14:55:34.270 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 164ms
+14:55:34.361 INFO  [BackgroundTaskThread-2137684494] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+14:55:34.381 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@73df6c83. User: 0f5d5ce1-80ad-74cb-ac27-534df9fd5cd3
+14:55:34.383 INFO  [BackgroundTaskThread-996071813] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-7ms
+14:55:34.417 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@21f969e3. User: 0f5d5ce1-80ad-74cb-ac27-534df9fd5cd3
+14:55:36.558 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@77661371
+14:55:36.566 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@1972dbc9
+14:55:36.566 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@2e435201
+14:55:36.569 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@2ec21060
+14:55:36.766 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@29019b1c
+14:55:36.943 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+14:55:36.944 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+14:55:36.948 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+14:55:36.950 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+14:55:37.182 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@61ddc306
+14:55:37.182 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@61ddc306
+14:55:42.523 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: 0f5d5ce1-80ad-74cb-ac27-534df9fd5cd3 [admin]
+14:55:42.528 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@2ad0daa4: startup date [Thu Mar 09 14:55:29 GMT+04:00 2017]; root of context hierarchy
+14:55:42.531 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+14:56:12.345 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+14:56:12.407 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+14:56:12.419 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+14:56:12.572 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@7890b393: startup date [Thu Mar 09 14:56:12 GMT+04:00 2017]; root of context hierarchy
+14:56:12.611 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+14:56:13.190 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+14:56:13.191 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+14:56:13.192 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+14:56:13.201 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+14:56:13.226 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+14:56:13.523 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+14:56:13.527 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+14:56:13.531 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:56:14.013 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+14:56:14.481 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+14:56:19.150 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+14:56:19.163 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+14:56:19.220 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+14:56:22.868 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: 4af3cbc0-8238-b7f2-c5c1-24e6091354b1 [admin]
+14:56:22.900 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+14:56:23.038 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 138ms
+14:56:23.115 INFO  [BackgroundTaskThread-814179377] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+14:56:23.125 INFO  [BackgroundTaskThread-1753266118] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-3ms
+14:56:23.133 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@5c4a1b7d. User: 4af3cbc0-8238-b7f2-c5c1-24e6091354b1
+14:56:23.133 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@2e067189. User: 4af3cbc0-8238-b7f2-c5c1-24e6091354b1
+14:57:02.534 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: 4af3cbc0-8238-b7f2-c5c1-24e6091354b1 [admin]
+14:57:02.543 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@7890b393: startup date [Thu Mar 09 14:56:12 GMT+04:00 2017]; root of context hierarchy
+14:57:02.545 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:06:43.290 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:06:43.352 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:06:43.365 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:06:43.492 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@7b9aad8d: startup date [Thu Mar 09 15:06:43 GMT+04:00 2017]; root of context hierarchy
+15:06:43.523 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:06:44.078 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:06:44.079 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:06:44.080 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:06:44.087 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:06:44.106 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:06:44.402 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:06:44.405 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:06:44.409 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:06:44.735 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:06:45.079 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:06:45.167 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:06:45.172 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:06:45.216 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:06:47.004 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: ab47a96b-131e-b6ed-8f62-f87fb0e4593c [admin]
+15:06:47.040 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:06:47.197 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 157ms
+15:06:47.270 INFO  [BackgroundTaskThread-1472776114] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-5ms
+15:06:47.276 INFO  [BackgroundTaskThread-1319491869] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:06:47.277 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@6a56f514. User: ab47a96b-131e-b6ed-8f62-f87fb0e4593c
+15:06:47.277 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@5db96b66. User: ab47a96b-131e-b6ed-8f62-f87fb0e4593c
+15:10:42.428 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: ab47a96b-131e-b6ed-8f62-f87fb0e4593c [admin]
+15:10:42.434 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@7b9aad8d: startup date [Thu Mar 09 15:06:43 GMT+04:00 2017]; root of context hierarchy
+15:10:42.435 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:14:59.998 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:15:00.102 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:15:00.116 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:15:00.272 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@ee0cd7: startup date [Thu Mar 09 15:15:00 GMT+04:00 2017]; root of context hierarchy
+15:15:00.308 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:15:00.942 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:15:00.943 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:15:00.944 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:15:00.951 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:15:00.971 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:15:01.367 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:15:01.371 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:15:01.374 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:15:01.720 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:15:02.071 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:15:02.177 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:15:02.188 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:15:02.236 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:15:12.711 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: af9286c5-a124-260a-9d27-2102253990e1 [admin]
+15:15:12.737 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:15:12.880 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 143ms
+15:15:12.958 INFO  [BackgroundTaskThread-203978537] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-4ms
+15:15:12.964 INFO  [BackgroundTaskThread-1732874231] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:15:12.978 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@747a6641. User: af9286c5-a124-260a-9d27-2102253990e1
+15:15:12.978 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@3b7e7526. User: af9286c5-a124-260a-9d27-2102253990e1
+15:15:33.806 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: af9286c5-a124-260a-9d27-2102253990e1 [admin]
+15:15:33.810 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@ee0cd7: startup date [Thu Mar 09 15:15:00 GMT+04:00 2017]; root of context hierarchy
+15:15:33.811 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:16:44.275 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:16:44.334 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:16:44.346 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:16:44.471 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6cbef01: startup date [Thu Mar 09 15:16:44 GMT+04:00 2017]; root of context hierarchy
+15:16:44.501 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:16:44.974 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:16:44.975 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:16:44.975 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:16:44.982 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:16:45.002 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:16:45.386 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:16:45.389 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:16:45.393 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:16:45.713 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:16:46.045 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:16:46.138 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:16:46.142 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:16:46.187 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:16:48.219 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: bfc9fec7-011c-d272-06ec-48dc90d690ad [admin]
+15:16:48.252 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:16:48.395 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 142ms
+15:16:48.468 INFO  [BackgroundTaskThread-1793245160] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-9ms
+15:16:48.470 INFO  [BackgroundTaskThread-1181925797] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:16:48.477 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@58dce24c. User: bfc9fec7-011c-d272-06ec-48dc90d690ad
+15:16:48.477 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@1f312ac. User: bfc9fec7-011c-d272-06ec-48dc90d690ad
+15:16:51.476 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@945201
+15:16:51.479 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@10c70194
+15:16:51.480 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@43b27bba
+15:16:51.481 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@3224cc53
+15:16:51.618 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@4510f108
+15:16:51.934 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+15:16:51.935 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+15:16:51.939 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+15:16:51.941 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+15:16:52.186 DEBUG [AWT-EventQueue-2] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:16:52.186 INFO  [AWT-EventQueue-2] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+15:16:52.244 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:16:52.245 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:16:52.253 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:16:52.253 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:16:52.253 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+15:16:52.257 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+15:16:52.260 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:16:52.262 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:16:52.263 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:16:52.263 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:16:52.349 DEBUG [AWT-EventQueue-2] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+15:16:52.491 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@51522d9
+15:16:52.491 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@51522d9
+15:17:00.038 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: bfc9fec7-011c-d272-06ec-48dc90d690ad [admin]
+15:17:00.044 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6cbef01: startup date [Thu Mar 09 15:16:44 GMT+04:00 2017]; root of context hierarchy
+15:17:00.045 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:34:16.089 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:34:16.145 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:34:16.157 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:34:16.290 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@5d2c7db7: startup date [Thu Mar 09 15:34:16 GMT+04:00 2017]; root of context hierarchy
+15:34:16.319 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:34:16.903 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:34:16.904 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:34:16.905 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:34:16.911 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:34:16.929 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:34:17.212 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:34:17.216 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:34:17.221 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:34:17.527 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:34:17.873 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:34:17.960 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:34:17.964 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:34:18.004 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:34:20.283 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: e82d3c04-1491-c235-c81f-63f86da43846 [admin]
+15:34:20.319 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:34:20.474 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 154ms
+15:34:20.553 INFO  [BackgroundTaskThread-577260262] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-5ms
+15:34:20.555 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@41814bef. User: e82d3c04-1491-c235-c81f-63f86da43846
+15:34:20.555 INFO  [BackgroundTaskThread-924108673] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:34:20.589 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@7bfa5961. User: e82d3c04-1491-c235-c81f-63f86da43846
+15:34:23.954 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@5191e8f5
+15:34:23.957 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@2aff4302
+15:34:23.958 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@7c6a2537
+15:34:23.959 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@68ee4c68
+15:34:24.232 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@2ff7c86a
+15:34:24.355 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+15:34:24.356 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+15:34:24.360 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+15:34:24.365 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+15:34:24.481 DEBUG [AWT-EventQueue-2] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:34:24.482 INFO  [AWT-EventQueue-2] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+15:34:24.501 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:34:24.502 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:34:24.510 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:34:24.510 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:34:24.510 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+15:34:24.513 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+15:34:24.515 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:34:24.516 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:34:24.516 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:34:24.517 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:34:24.573 DEBUG [AWT-EventQueue-2] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+15:34:24.672 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@46c2d925
+15:34:24.672 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@46c2d925
+15:36:15.498 WARN  [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Error closing application
+com.haulmont.cuba.security.global.NoUserSessionException: User session not found: e82d3c04-1491-c235-c81f-63f86da43846
+	at com.haulmont.cuba.core.sys.ServiceInterceptor.aroundInvoke(ServiceInterceptor.java:107) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.sun.proxy.$Proxy160.saveSetting(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.sun.proxy.$Proxy243.saveSetting(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.remoting.support.RemoteInvocation.invoke(RemoteInvocation.java:212) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.haulmont.cuba.core.sys.remoting.CubaRemoteInvocationExecutor.invoke(CubaRemoteInvocationExecutor.java:109) ~[na:na]
+	at org.springframework.remoting.support.RemoteInvocationBasedExporter.invoke(RemoteInvocationBasedExporter.java:78) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.remoting.support.RemoteInvocationBasedExporter.invokeAndCreateResult(RemoteInvocationBasedExporter.java:114) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.haulmont.cuba.core.sys.remoting.HttpServiceExporter.handleRequest(HttpServiceExporter.java:77) ~[na:na]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:51) ~[na:na]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[na:na]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[na:na]
+	at com.haulmont.cuba.core.sys.remoting.RemotingServlet.doService(RemotingServlet.java:149) ~[na:na]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[na:na]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[na:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[javaee-api-7.0.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[na:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[javaee-api-7.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[na:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[na:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[na:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[na:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[na:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[na:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[na:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) ~[na:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[na:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) ~[na:na]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624) ~[na:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[na:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) ~[na:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) ~[na:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[na:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437) ~[na:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[na:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[na:na]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+	at org.springframework.remoting.support.RemoteInvocationUtils.fillInClientStackTraceIfPossible(RemoteInvocationUtils.java:45) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.haulmont.cuba.core.sys.remoting.HttpServiceProxy.recreateRemoteInvocationResult(HttpServiceProxy.java:48) ~[cuba-global-6.4.2.jar:6.4.2]
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:150) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at com.sun.proxy.$Proxy13.saveSetting(Unknown Source) ~[na:na]
+	at com.haulmont.cuba.desktop.settings.DesktopSettingsClient.setSetting(DesktopSettingsClient.java:61) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.DesktopWindowManager$AsyncSettingsImpl.commit(DesktopWindowManager.java:1825) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.components.WindowDelegate.saveSettings(WindowDelegate.java:142) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.gui.components.DesktopWindow.saveSettings(DesktopWindow.java:218) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.gui.components.AbstractWindow.saveSettings(AbstractWindow.java:157) ~[cuba-gui-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.DesktopWindowManager.checkModificationsAndCloseAll(DesktopWindowManager.java:1739) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.App.recursiveClosingFrames(App.java:469) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.App.exit(App.java:322) ~[cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.App$2.windowClosingAfterValidation(App.java:292) [cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareWindowClosingListener$1.run(ValidationAwareWindowClosingListener.java:30) [cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAlertHolder.runIfValid(ValidationAlertHolder.java:59) [cuba-desktop-6.4.2.jar:6.4.2]
+	at com.haulmont.cuba.desktop.sys.validation.ValidationAwareWindowClosingListener.windowClosing(ValidationAwareWindowClosingListener.java:27) [cuba-desktop-6.4.2.jar:6.4.2]
+	at java.awt.Window.processWindowEvent(Unknown Source) [na:1.8.0_121]
+	at javax.swing.JFrame.processWindowEvent(Unknown Source) [na:1.8.0_121]
+	at java.awt.Window.processEvent(Unknown Source) [na:1.8.0_121]
+	at java.awt.Component.dispatchEventImpl(Unknown Source) [na:1.8.0_121]
+	at java.awt.Container.dispatchEventImpl(Unknown Source) [na:1.8.0_121]
+	at java.awt.Window.dispatchEventImpl(Unknown Source) [na:1.8.0_121]
+	at java.awt.Component.dispatchEvent(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue.access$500(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue$3.run(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue$3.run(Unknown Source) [na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue$4.run(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue$4.run(Unknown Source) [na:1.8.0_121]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_121]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventQueue.dispatchEvent(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source) [na:1.8.0_121]
+	at java.awt.EventDispatchThread.run(Unknown Source) [na:1.8.0_121]
+15:36:17.312 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@5d2c7db7: startup date [Thu Mar 09 15:34:16 GMT+04:00 2017]; root of context hierarchy
+15:36:17.316 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:36:58.764 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:36:58.831 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:36:58.849 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:36:58.989 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@3ada528a: startup date [Thu Mar 09 15:36:58 GMT+04:00 2017]; root of context hierarchy
+15:36:59.019 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:36:59.632 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:36:59.633 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:36:59.633 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:36:59.639 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:36:59.659 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:36:59.936 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:36:59.939 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:36:59.943 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:37:00.273 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:37:00.599 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:37:00.697 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:37:00.703 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:37:00.755 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:37:07.619 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: fe05b81d-1273-df06-75c9-78f0cbd27020 [admin]
+15:37:07.656 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:37:07.812 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 156ms
+15:37:07.912 INFO  [BackgroundTaskThread-110844098] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-6ms
+15:37:07.915 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@44a52b82. User: fe05b81d-1273-df06-75c9-78f0cbd27020
+15:37:07.917 INFO  [BackgroundTaskThread-1228382430] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:37:07.951 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@7307768c. User: fe05b81d-1273-df06-75c9-78f0cbd27020
+15:37:10.084 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@3b94cbd
+15:37:10.087 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@6453e60f
+15:37:10.087 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@4139a32a
+15:37:10.088 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@d3936bc
+15:37:10.207 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@426e1e63
+15:37:10.445 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+15:37:10.446 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+15:37:10.450 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+15:37:10.452 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+15:37:10.615 DEBUG [AWT-EventQueue-2] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:37:10.615 INFO  [AWT-EventQueue-2] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+15:37:10.638 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:37:10.639 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:37:10.648 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:37:10.648 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:37:10.648 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+15:37:10.652 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+15:37:10.653 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:37:10.655 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:37:10.655 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:37:10.656 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:37:10.720 DEBUG [AWT-EventQueue-2] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+15:37:10.868 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@5fcb2dad
+15:37:10.868 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@5fcb2dad
+15:37:28.804 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: fe05b81d-1273-df06-75c9-78f0cbd27020 [admin]
+15:37:28.811 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@3ada528a: startup date [Thu Mar 09 15:36:58 GMT+04:00 2017]; root of context hierarchy
+15:37:28.813 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:37:35.878 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:37:35.939 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:37:35.951 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:37:36.078 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@278c5af8: startup date [Thu Mar 09 15:37:36 GMT+04:00 2017]; root of context hierarchy
+15:37:36.106 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:37:36.656 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:37:36.658 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:37:36.658 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:37:36.664 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:37:36.685 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:37:36.962 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:37:36.965 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:37:36.969 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:37:37.268 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:37:37.606 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:37:37.693 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:37:37.697 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:37:37.738 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:37:41.446 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: 799b09de-91f4-0205-a9b3-e2cf2249d3c9 [admin]
+15:37:41.473 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:37:41.606 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 133ms
+15:37:41.675 INFO  [BackgroundTaskThread-189375499] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-5ms
+15:37:41.686 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@7de147a1. User: 799b09de-91f4-0205-a9b3-e2cf2249d3c9
+15:37:41.686 INFO  [BackgroundTaskThread-1689328311] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:37:41.720 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@593ff202. User: 799b09de-91f4-0205-a9b3-e2cf2249d3c9
+15:37:47.024 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: 799b09de-91f4-0205-a9b3-e2cf2249d3c9 [admin]
+15:37:47.036 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@278c5af8: startup date [Thu Mar 09 15:37:36 GMT+04:00 2017]; root of context hierarchy
+15:37:47.038 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:37:55.966 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:37:56.024 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:37:56.037 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:37:56.160 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@21651ff7: startup date [Thu Mar 09 15:37:56 GMT+04:00 2017]; root of context hierarchy
+15:37:56.188 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:37:56.729 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:37:56.730 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:37:56.730 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:37:56.737 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:37:56.757 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:37:57.063 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:37:57.067 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:37:57.071 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:37:57.395 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:37:57.772 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:37:57.862 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:37:57.866 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:37:57.909 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:37:59.898 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: 2402edc9-b2bb-5d51-ec0f-78058a9da421 [admin]
+15:37:59.925 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:38:00.077 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 152ms
+15:38:00.153 INFO  [BackgroundTaskThread-1143211497] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-8ms
+15:38:00.156 INFO  [BackgroundTaskThread-892049653] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:38:00.166 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@3787a357. User: 2402edc9-b2bb-5d51-ec0f-78058a9da421
+15:38:00.166 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@3c4c49b0. User: 2402edc9-b2bb-5d51-ec0f-78058a9da421
+15:38:05.570 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: 2402edc9-b2bb-5d51-ec0f-78058a9da421 [admin]
+15:38:05.580 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@21651ff7: startup date [Thu Mar 09 15:37:56 GMT+04:00 2017]; root of context hierarchy
+15:38:05.585 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:38:13.105 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:38:13.163 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:38:13.175 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:38:13.301 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@d4a5c96: startup date [Thu Mar 09 15:38:13 GMT+04:00 2017]; root of context hierarchy
+15:38:13.330 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:38:13.888 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:38:13.889 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:38:13.889 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:38:13.895 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:38:13.915 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:38:14.204 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:38:14.207 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:38:14.211 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:38:14.513 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:38:14.905 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:38:14.990 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:38:14.994 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:38:15.034 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:38:18.173 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: 449fa6fa-97a7-b7cc-9745-203197fc8a64 [admin]
+15:38:18.200 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:38:18.330 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 130ms
+15:38:18.402 INFO  [BackgroundTaskThread-1717152816] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:38:18.405 INFO  [BackgroundTaskThread-285552050] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-4ms
+15:38:18.412 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@7c0f881. User: 449fa6fa-97a7-b7cc-9745-203197fc8a64
+15:38:18.412 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@60d6dc76. User: 449fa6fa-97a7-b7cc-9745-203197fc8a64
+15:38:31.108 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@6a50bc27
+15:38:31.111 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@70c11b61
+15:38:31.111 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@77c48b68
+15:38:31.112 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@4fca109e
+15:38:31.543 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@1e1c5766
+15:38:31.675 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+15:38:31.677 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+15:38:31.693 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+15:38:31.697 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+15:38:31.845 DEBUG [AWT-EventQueue-2] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:38:31.846 INFO  [AWT-EventQueue-2] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+15:38:31.865 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:38:31.866 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:38:31.874 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:38:31.874 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:38:31.874 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+15:38:31.879 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+15:38:31.880 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:38:31.881 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:38:31.882 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:38:31.883 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:38:31.943 DEBUG [AWT-EventQueue-2] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+15:38:32.117 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@2c003f7e
+15:38:32.118 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@2c003f7e
+15:38:34.713 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: 449fa6fa-97a7-b7cc-9745-203197fc8a64 [admin]
+15:38:34.720 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@d4a5c96: startup date [Thu Mar 09 15:38:13 GMT+04:00 2017]; root of context hierarchy
+15:38:34.721 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:38:41.645 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:38:41.703 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:38:41.715 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:38:41.839 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f262ad5: startup date [Thu Mar 09 15:38:41 GMT+04:00 2017]; root of context hierarchy
+15:38:41.868 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:38:42.339 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:38:42.340 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:38:42.341 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:38:42.349 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:38:42.369 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:38:42.683 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:38:42.687 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:38:42.690 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:38:43.147 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:38:43.535 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:38:43.632 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:38:43.636 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:38:43.680 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:38:47.007 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: fe6a7279-3862-c502-4ab5-e4a5c5730eee [admin]
+15:38:47.033 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:38:47.171 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 138ms
+15:38:47.247 INFO  [BackgroundTaskThread-474435728] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:38:47.249 INFO  [BackgroundTaskThread-1283835103] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-6ms
+15:38:47.261 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@43c1153a. User: fe6a7279-3862-c502-4ab5-e4a5c5730eee
+15:38:47.261 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@55bd6d64. User: fe6a7279-3862-c502-4ab5-e4a5c5730eee
+15:38:49.738 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@5f6e714b
+15:38:49.741 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@739c915e
+15:38:49.742 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@6f2ccdc1
+15:38:49.743 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@494f851a
+15:38:49.872 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@15c0e679
+15:38:49.997 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+15:38:49.998 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+15:38:50.001 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+15:38:50.003 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+15:38:50.139 DEBUG [AWT-EventQueue-2] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:38:50.139 INFO  [AWT-EventQueue-2] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+15:38:50.159 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:38:50.160 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:38:50.168 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:38:50.168 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:38:50.169 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+15:38:50.172 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+15:38:50.173 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:38:50.175 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:38:50.175 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:38:50.176 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:38:50.233 DEBUG [AWT-EventQueue-2] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+15:38:50.451 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@26b38ba2
+15:38:50.452 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@26b38ba2
+15:38:53.765 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: fe6a7279-3862-c502-4ab5-e4a5c5730eee [admin]
+15:38:53.771 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f262ad5: startup date [Thu Mar 09 15:38:41 GMT+04:00 2017]; root of context hierarchy
+15:38:53.772 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'
+15:50:40.767 DEBUG [AWT-EventQueue-2] com.haulmont.cuba.desktop.App - Program arguments: [
+      cuba.connectionUrlList=http://localhost:8080/app-core
+    ]
+15:50:40.824 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba, com.haulmont.reports]
+15:50:40.835 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppProperties:
+cuba.availableLocales=English|en;Russian|ru
+cuba.clientType=DESKTOP
+cuba.confDir=C:\Users\iskandarov/.cuba/newReporttest/conf
+cuba.connectionUrlList=http://localhost:8080/app-core
+cuba.creditsConfig=cuba-credits.xml reports-credits.xml
+cuba.dataDir=C:\Users\iskandarov/.cuba/newReporttest/work
+cuba.desktop.loginDialogDefaultPassword=admin
+cuba.desktop.loginDialogDefaultUser=admin
+cuba.groovyClassPath=
+cuba.groovyEvaluatorImport=com.haulmont.cuba.core.global.PersistenceHelper
+cuba.lazyLoadServerViews=true
+cuba.localeSelectVisible=true
+cuba.logDir=C:\Users\iskandarov/.cuba/newReporttest/logs
+cuba.mainMessagePack=com.haulmont.cuba.desktop com.haulmont.reports.desktop com.company.newreporttest.desktop
+cuba.menuConfig=cuba-desktop-menu.xml reports-desktop-menu.xml com/company/newreporttest/desktop-menu.xml
+cuba.metadataConfig=cuba-metadata.xml cuba-gui-metadata.xml reports-metadata.xml com/company/newreporttest/metadata.xml
+cuba.passwordEncryptionModule=cuba_Sha1EncryptionModule
+cuba.permissionConfig=cuba-desktop-permissions.xml com/company/newreporttest/desktop-permissions.xml
+cuba.persistenceConfig=base-persistence.xml cuba-persistence.xml reports-persistence.xml com/company/newreporttest/persistence.xml
+cuba.remoteMessagesSearchEnabled=false
+cuba.springContextConfig=cuba-desktop-spring.xml reports-desktop-spring.xml com/company/newreporttest/desktop-spring.xml
+cuba.tempDir=C:\Users\iskandarov/.cuba/newReporttest/temp
+cuba.themeConfig=nimbus-theme.properties
+cuba.viewsConfig=cuba-views.xml reports-views.xml com/company/newreporttest/views.xml
+cuba.windowConfig=cuba-desktop-screens.xml reports-desktop-screens.xml com/company/newreporttest/desktop-screens.xml
+15:50:40.972 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@3cecb37a: startup date [Thu Mar 09 15:50:40 GMT+04:00 2017]; root of context hierarchy
+15:50:41.000 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cuba-desktop-spring.xml]
+15:50:41.554 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_ConfigCacheStrategy' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-client-6.4.2.jar!/com/haulmont/cuba/client/sys/cache/ConfigCacheStrategy.class]] with [Generic bean: class [com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:50:41.555 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_PasswordEncryption' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/PasswordEncryptionImpl.class]] with [Generic bean: class [com.haulmont.cuba.core.sys.PasswordEncryptionImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:50:41.556 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaDefaultListableBeanFactory - Overriding bean definition for bean 'cuba_TimeSource' with a different definition: replacing [Generic bean: class [com.haulmont.cuba.core.sys.TimeSourceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:http://localhost:8080/app-webstart/lib/cuba-global-6.4.2.jar!/com/haulmont/cuba/core/sys/TimeSourceImpl.class]] with [Generic bean: class [com.haulmont.cuba.desktop.sys.DesktopTimeSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [cuba-desktop-spring.xml]]
+15:50:41.561 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [reports-desktop-spring.xml]
+15:50:41.580 INFO  [AWT-EventQueue-2] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [com/company/newreporttest/desktop-spring.xml]
+15:50:41.855 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_EntitySnapshotService, cuba_FileStorageService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_EntityImportExportService]
+15:50:41.859 INFO  [AWT-EventQueue-2] c.h.c.c.s.r.RemoteProxyBeanCreator - Configuring remote proxy beans for http://localhost:8080/app-core: [report_ReportService, report_ReportWizardService]
+15:50:41.863 INFO  [AWT-EventQueue-2] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:50:42.173 INFO  [AWT-EventQueue-2] c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+15:50:42.522 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'backgroundWorkerScheduler'
+15:50:42.607 INFO  [AWT-EventQueue-2] c.h.c.d.sys.DesktopAppContextLoader - AppContext initialized
+15:50:42.611 INFO  [AWT-EventQueue-2] c.h.c.d.t.i.DesktopThemeLoaderImpl - Loading theme file jar:http://localhost:8080/app-webstart/lib/cuba-desktop-6.4.2.jar!/com/haulmont/cuba/desktop/res/nimbus/nimbus.xml
+15:50:42.653 DEBUG [AWT-EventQueue-2] c.h.c.g.t.ThemeConstantsRepository - Loading theme constants
+15:50:44.813 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged in: 5080ef55-068f-244d-02dd-8bd8c18a7231 [admin]
+15:50:44.837 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+15:50:44.987 INFO  [AWT-EventQueue-2] c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 150ms
+15:50:45.060 INFO  [BackgroundTaskThread-845420256] c.h.c.d.sys.ClientTimeSynchronizer - Using server time, offset=-9ms
+15:50:45.065 INFO  [BackgroundTaskThread-1377660757] c.h.c.d.sys.ClientTimeSynchronizer - Time zone set to sun.util.calendar.ZoneInfo[id="GMT+04:00",offset=14400000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+15:50:45.070 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$UpdateTimeOffsetTask@18c5e4e9. User: 5080ef55-068f-244d-02dd-8bd8c18a7231
+15:50:45.070 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.ClientTimeSynchronizer$ObtainServerTimeZoneTask@6b3f246e. User: 5080ef55-068f-244d-02dd-8bd8c18a7231
+15:50:48.205 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@773b548a
+15:50:48.208 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@db4adec
+15:50:48.209 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@624b18e1
+15:50:48.210 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@5dc1704a
+15:50:48.451 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@ae473a
+15:50:48.574 INFO  [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
+15:50:48.575 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+15:50:48.579 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: reports-views.xml
+15:50:48.581 DEBUG [AWT-EventQueue-2] c.h.c.c.sys.ViewRepositoryClientImpl - Deploying views config: com/company/newreporttest/views.xml
+15:50:48.710 DEBUG [AWT-EventQueue-2] org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:50:48.711 INFO  [AWT-EventQueue-2] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.0.Final
+15:50:48.730 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:50:48.731 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:50:48.740 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+15:50:48.740 DEBUG [AWT-EventQueue-2] o.h.v.i.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+15:50:48.740 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom TraversableResolver of type com.haulmont.cuba.core.sys.validation.CubaValidationTraversableResolver
+15:50:48.743 DEBUG [AWT-EventQueue-2] o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type com.haulmont.cuba.core.sys.validation.CubaValidationMessagesInterpolator
+15:50:48.745 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:50:48.746 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+15:50:48.746 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+15:50:48.747 DEBUG [AWT-EventQueue-2] o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:50:48.808 DEBUG [AWT-EventQueue-2] o.h.v.i.m.p.TypeAnnotationAwareMetaDataProvider - HV000188: Parameterized type with more than one argument is not supported: com.google.common.collect.Multimap<java.lang.String, java.util.UUID>
+15:50:48.914 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@5792e822
+15:50:48.915 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@5792e822
+15:50:49.562 DEBUG [AWT-EventQueue-2] c.h.c.d.g.e.i.DesktopBackgroundWorker - Done task: com.haulmont.cuba.desktop.sys.DesktopWindowManager$AsyncSettingsImpl$1@20b23023. User: 5080ef55-068f-244d-02dd-8bd8c18a7231
+15:50:50.949 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style c-generic-filter for component com.haulmont.cuba.desktop.gui.components.DesktopGroupBox@17a40546
+15:50:50.951 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-conditions for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@6824eda5
+15:50:50.952 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button-layout for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@6a537f9
+15:50:50.953 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-search-button for component com.haulmont.cuba.desktop.gui.components.DesktopButton@1c34f096
+15:50:50.970 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-settings-button for component com.haulmont.cuba.desktop.gui.components.DesktopPopupButton@58206178
+15:50:51.036 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@fb97b1c
+15:50:51.036 DEBUG [AWT-EventQueue-2] c.h.c.d.theme.impl.DesktopThemeImpl - Can not find style filter-control-no-border for component com.haulmont.cuba.desktop.gui.components.DesktopHBox@fb97b1c
+15:50:54.889 INFO  [AWT-EventQueue-2] com.haulmont.cuba.desktop.Connection - Logged out: 5080ef55-068f-244d-02dd-8bd8c18a7231 [admin]
+15:50:54.915 INFO  [AWT-EventQueue-2] c.h.c.c.s.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@3cecb37a: startup date [Thu Mar 09 15:50:40 GMT+04:00 2017]; root of context hierarchy
+15:50:54.918 INFO  [AWT-EventQueue-2] o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'backgroundWorkerScheduler'

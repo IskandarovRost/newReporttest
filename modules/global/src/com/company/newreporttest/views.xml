@@ -8,4 +8,20 @@
         <property name="author"
                   view="_minimal"/>
     </view>
+    <view class="com.company.newreporttest.entity.RefEntity"
+          extends="_local"
+          name="refEntity-view">
+        <property name="author"
+                  view="_minimal"/>
+        <property name="book"
+                  view="_minimal"/>
+        <property name="types"
+                  view="_minimal"/>
+    </view>
+    <view class="com.company.newreporttest.entity.NewEntity"
+          extends="_local"
+          name="newEntity-view">
+        <property name="file"
+                  view="_minimal"/>
+    </view>
 </views>

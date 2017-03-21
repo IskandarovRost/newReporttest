@@ -2,8 +2,10 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application"
           insertBefore="administration">
-        <item id="newreporttest$Book.browse"/>
-        <item id="newreporttest$Author.browse"/>
+        <item id="screen"/>
         <item id="newreporttest$LiteratureType.browse"/>
+        <item id="newreporttest$NewEntity.browse"/>
+        <item id="newreporttest$Author.browse"/>
+        <item id="newreporttest$Book.browse"/>
     </menu>
 </menu-config>
